@@ -1,6 +1,13 @@
 # Orcam_Home_task
-Run the task.py file by command line with
+
+## this program do:
+1. fetching a list of devices from server API
+2. checking if each device has a userId field.
+4. if the user (by userId) has firstName or lastName fields, updating ingdevice.userName field: device.userName = user.firstName + ' ' + user.lastName.
+5.storing device using update API
+
+Run the task.py file by command line with:
 ### "task.py -a test-key-id-1 -b https://admin.dev.orcam.io/api/v8"
-Or with
+Or with:
 ### task.py -h
-to get running instructions
+to get running instructions.
