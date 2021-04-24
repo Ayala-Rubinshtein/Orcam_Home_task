@@ -8,5 +8,4 @@
 
 
 
-### Run the task.py file by command line with: "task.py -a test-key-id-1 -b https://admin.dev.orcam.io/api/v8" 
-### Or with: "task.py -h" to get running instructions.
+###  Download the task.py to the local server and run by command line with: "task.py -a test-key-id-1 -b https://admin.dev.orcam.io/api/v8" ,or with: "task.py -h" to get running instructions.
