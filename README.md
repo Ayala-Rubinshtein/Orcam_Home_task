@@ -1,6 +1,5 @@
 # Orcam_Home_task
-
-## This project was generated with Python‏
+This project was generated with Python‏
 
 ## the program do:
 1. Fetching a list of devices from server API
