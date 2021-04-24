@@ -1,6 +1,6 @@
 # Orcam_Home_task
 
-## this program do:
+## This program do:
 1. Fetching a list of devices from server API
 2. Checking if each device has a userId field.
 3. If the user (by userId) has firstName or lastName fields, updating ingdevice.userName field: device.userName = user.firstName + ' ' + user.lastName.
