@@ -4,8 +4,8 @@ import argparse
 
 
 class Server:
-    def __init__(self, bas: str, acc: str) -> None:
-        self.base = bas
+    def __init__(self, base: str, acc: str) -> None:
+        self.base = base
         self.access_key = 'accessKey ' + acc
 
     def __fetch_devices(self, page: int) -> dict:
@@ -53,16 +53,16 @@ class Server:
                 if not user:
                     continue
 
-                firs_name = ''
+                first_name = ''
                 last_name = ''
                 if 'firstName' in user:
-                    firs_name = user['firstName']
+                    first_name = user['firstName']
                 elif 'lastName' in user:
                     last_name = user['lastName']
                 else:
                     continue
 
-                user_name = f'{firs_name} {last_name}'
+                user_name = f'{first_name} {last_name}'
 
                 data_list.append((dev['deviceId'], user_name))
 
