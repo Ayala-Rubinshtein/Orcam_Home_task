@@ -52,20 +52,17 @@ class Server:
 
                 if not user:
                     continue
-
-                first_name = ''
-                last_name = ''
-                if 'firstName' in user:
+                if 'firstName' in user and 'lastName' in user:
                     first_name = user['firstName']
-                elif 'lastName' in user:
                     last_name = user['lastName']
+                    user_name = f'{first_name} {last_name}'
+                elif 'firstName' in user:
+                    first_name = user['firstName']
+                    user_name = first_name
                 else:
                     continue
 
-                user_name = f'{first_name} {last_name}'
-
                 data_list.append((dev['deviceId'], user_name))
-
         return data_list
 
     def __update_device(self, dev_id: str, user_name: str) -> bool:
